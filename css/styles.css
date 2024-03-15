@@ -138,6 +138,10 @@ p {
     display: flex;
   }
 
+  .contact-list-item-mail {
+    margin-bottom: 12px;
+  }
+
   .menu-open-btn {
     display: none;
   }
@@ -250,6 +254,9 @@ p {
     display: flex;
     gap: 40px;
   }
+  .contact-list-item-mail {
+    margin-bottom: 0px;
+  }
 }
 
 /* /page-header */
@@ -272,6 +279,8 @@ p {
   }
   .mobile-menu-container {
     position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
   }
 
   .mobile-menu.is-open {
@@ -297,7 +306,10 @@ p {
   }
 
   .menu-mobile-nav {
-    padding-top: 72px;
+  }
+
+  .menu-nav-list-item:not(:last-child) {
+    margin-bottom: 40px;
   }
 
   .menu-link {
@@ -308,7 +320,6 @@ p {
     letter-spacing: 0.02em;
     color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-bottom: 40px;
   }
 
   .studio-link {
@@ -316,7 +327,7 @@ p {
   }
 
   .menu-contact-block {
-    margin-top: 128px;
+    margin-top: 168px;
     margin-bottom: 48px;
   }
 
@@ -331,7 +342,7 @@ p {
   }
 
   .contact-list-tel-link {
-    margin-top: 24px;
+    margin-bottom: 24px;
     color: #4d5ae5;
   }
 
@@ -482,8 +493,12 @@ p {
   padding: 96px 0;
 }
 
-.benefits-list-item:not(:last-child) {
+.benefits-list-item {
   margin-bottom: 72px;
+}
+
+.last-benefits-item {
+  margin-bottom: 0px;
 }
 
 .benefits-list-title {
@@ -507,12 +522,12 @@ p {
 @media only screen and (min-width: 768px) {
   .benefits-list {
     display: flex;
-    gap: 24px;
-  }
-  .benefits-list {
+    column-gap: 24px;
+    row-gap: 72px;
     flex-wrap: wrap;
   }
   .benefits-list-item {
+    margin-bottom: 0px;
     width: calc((100% - 24px) / 2);
   }
   .benefits-list-title {
@@ -552,6 +567,10 @@ p {
     font-size: 20px;
     line-height: 1.2;
   }
+
+  .benefits-list-text {
+    font-weight: 400;
+  }
 }
 
 /* /benefits-section */
@@ -583,6 +602,10 @@ p {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.last-team-item {
+  margin-bottom: 0px;
 }
 
 .team-member-container {
@@ -776,6 +799,10 @@ p {
   text-align: center;
 }
 
+.footer-logo-contrainer {
+  margin-bottom: 72px;
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -845,6 +872,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .subscribe-form-field-input {
@@ -861,7 +889,7 @@ p {
   line-height: 2;
   letter-spacing: 0.04em;
   opacity: 0.3;
-  margin: 16px 0px;
+  margin-bottom: 16px;
 }
 
 .subscribe-form-field-input::placeholder {
@@ -913,6 +941,7 @@ p {
   }
 
   .footer-logo-contrainer {
+    margin-bottom: 0px;
     text-align: left;
   }
 
