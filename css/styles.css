@@ -280,6 +280,9 @@ p {
   .mobile-menu-container {
     position: relative;
     padding: 72px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
   }
 
   .mobile-menu.is-open {
@@ -306,6 +309,7 @@ p {
 
   .menu-mobile-nav {
     display: flex;
+    margin-bottom: 20px;
   }
 
   .menu-nav-list-item:not(:last-child) {
@@ -327,7 +331,7 @@ p {
   }
 
   .menu-contact-block {
-    margin-top: 168px;
+    margin-top: auto;
   }
 
   .contact-list-link {
