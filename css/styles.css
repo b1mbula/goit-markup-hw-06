@@ -305,6 +305,7 @@ p {
     align-items: center;
     justify-content: center;
     fill: #2e2f42;
+    stroke: #2e2f42;
   }
 
   .menu-mobile-nav {
